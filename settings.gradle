@@ -1,0 +1,9 @@
+apply from: 'opencv.gradle'
+
+include ':player'
+include ':app'
+
+include ':opencv'
+project(':opencv').projectDir = new File(openCVHome + '/sdk')
+
+rootProject.name = "AcgnPlayer"

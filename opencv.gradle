@@ -1,0 +1,5 @@
+
+Properties local = new Properties()
+local.load(new File(rootProject.projectDir, "local.properties").newDataInputStream())
+
+ext.openCVHome = local.getProperty("opencv.dir")
